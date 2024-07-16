@@ -47,7 +47,7 @@ class ExcelUserControllerV2 extends Controller
             }
 
             if($countUdl < $mincountUdl){
-                return ['status' => false ,    "message" => "Validation Error" , "data" => [] ,  "error" => ["Atleast Count of {$mincountUdl} users should be in User Detail Sheet."]]; 
+                return ['status' => false ,    "message" => "Validation Error" , "data" => [] ,  "error" => ["Atleast Count of {$mincountUdl} users should be in User Detail Log Sheet."]]; 
             }
             
             $vdata = $this->validateFileData($collection['user_details'] , $this->getRules('user_details'));
